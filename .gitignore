@@ -1,0 +1,16 @@
+# Local .terraform directories
+**/.terraform/*
+
+# tf lock file
+.terraform.lock.hcl
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# tfvar files
+*.tfvars
+
+# local temp files
+orch
+post.env
