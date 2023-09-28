@@ -2,9 +2,13 @@ variable "project_id" {
 
 }
 
-resource "random_pet" "logging" {
+resource "google_storage_bucket" "logs" {
+  project       = var.project_id
+  name          = "${var.project_id}-logs"
+  force_destroy = true
+  location      = "US"
 }
 
-output "logging_id" {
-  value = random_pet.logging.id
+output "logging_bucket_id" {
+  value = google_storage_bucket.logs.id
 }
