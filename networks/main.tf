@@ -29,5 +29,5 @@ output "vpc_id" {
 }
 
 output "subnet_id" {
-  value = module.network.subnets_ids[0]
+  value = module.network.subnets_ids[1]
 }
